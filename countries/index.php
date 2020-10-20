@@ -39,7 +39,7 @@
 		}
 	?>
 
-	<div class="content">
+	<section class="content">
 		
 		<main>
 			
@@ -73,7 +73,7 @@
 
 		</main>
 
-	</div>
+	</section>
 
 	<?php 
 		if (file_exists('views/footer.php')) {

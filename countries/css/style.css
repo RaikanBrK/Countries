@@ -9,6 +9,11 @@ body {
 }
 
 .content {
+	max-width: 1500px;
+	margin: auto;
+}
+
+section.content {
 	min-height: 75vh;
 }
 

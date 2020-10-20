@@ -2,7 +2,7 @@
 	require_once('views/menu.php');
 ?>
 
-<footer>
+<footer class="content">
 	<ul class="menu-footer">
 		<?php foreach ($menu as $link) { 
 			$diretorio = $link['diretorio'].'.php';

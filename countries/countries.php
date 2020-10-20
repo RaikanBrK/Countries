@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="css/footer.css">
 	
 	<link rel="stylesheet" href="css/countries.css">
-	
+
 	<link rel="stylesheet" href="css/media-query.css">
 	
 	<!-- Jquery -->
@@ -40,7 +40,7 @@
 		}
 	?>
 
-	<div class="content">
+	<section class="content">
 		<main>
 			
 			<div class="table-response-sm" id="table-countries">
@@ -88,9 +88,8 @@
 				</table>
 			</div>
 
-
 		</main>
-	</div>
+	</section>
 
 	<?php 
 		if (file_exists('views/footer.php')) {

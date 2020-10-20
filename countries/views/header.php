@@ -2,7 +2,7 @@
 	require_once('views/menu.php');
 ?>
 
-<header>
+<header class="content">
 	<nav class="navbar navbar-expand-md" id="header">
 
 		<a href="/index.php" class="navbar-brand logo-text">Willian</a>
