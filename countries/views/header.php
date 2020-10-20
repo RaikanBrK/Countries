@@ -1,3 +1,28 @@
+<?php
+	$menu = [
+		[
+			"diretorio" => "/index",
+			"text" => "Search for Countries"
+		],
+		[
+			"diretorio" => "/countries",
+			"text" => "Countries"
+		],
+		[
+			"diretorio" => "/student",
+			"text" => "Student"
+		]
+	];
+
+	function activeLink($path) {
+		$url = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+		$path = trim($path);
+		return $path == $url ? 'active' : '';
+	}
+
+
+?>
+
 <header>
 	<nav class="navbar navbar-expand-md" id="header">
 
@@ -9,15 +34,14 @@
 
 		<div class="collapse navbar-collapse" id="menu">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="/index.php">Search for Countries</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/countries.php">Countries</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/student.php">Student</a>
-				</li>
+
+				<?php foreach ($menu as $link) { 
+					$diretorio = $link['diretorio'].'.php';
+				?>
+					<li class="nav-item <?= activeLink($diretorio) ?>">
+						<a class="nav-link" href="<?= $diretorio ?>"><?= $link['text'] ?></a>
+					</li>
+				<?php } ?>
 			</ul>
 		</div>
 

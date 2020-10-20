@@ -17,6 +17,9 @@
 	<!-- Styles Css -->
 	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	
+	<link rel="stylesheet" href="css/search-countries.css">
 
 	<!-- Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -32,6 +35,15 @@
 		}
 	?>
 
+	<div class="content">
+		
+	</div>
+
+	<?php 
+		if (file_exists('views/footer.php')) {
+			require_once('views/footer.php');
+		}
+	?>
 
 </body>
 </html>

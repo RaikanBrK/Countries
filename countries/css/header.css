@@ -9,6 +9,10 @@
 	color: white;
 }
 
+.logo-text:hover {
+	color: #dcd4d4;
+}
+
 #menu ul {
 	gap: 10px;
 }
@@ -30,12 +34,12 @@
 	color: #fff5f5;
 }
 
-	#menu .nav-link:hover:before,
-	#menu .active .nav-link:before {
+#menu .nav-link:hover:before,
+#menu .active .nav-link:before {
 	content: '';
 	display: block;
 	background: #1FBB54;
-	height: 2px;
+	height: 1px;
 	width: 100%;
 	position: absolute;
 	left: 0;
