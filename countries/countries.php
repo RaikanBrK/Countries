@@ -1,3 +1,8 @@
+<?php 
+	require_once('bd/ControllerCountries.php');
+	$countries = new ControllerCountries();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +37,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </head>
 <body>
-	
 
 	<?php 
 		if (file_exists('views/header.php')) {
@@ -42,7 +46,7 @@
 
 	<section class="content">
 		<main>
-			
+
 			<div class="table-response-sm" id="table-countries">
 				<table class="table table-striped table-dark table-hover">
 					<thead>
@@ -52,38 +56,12 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
+						<?php foreach ($countries->__get('countries') as $countrie => $capital) { ?>
+							<tr>
+								<th scope="row"><?= $countrie ?></th>
+								<td><?= $capital ?></td>
+							</tr>
+						<?php } ?>
 					</tbody>
 				</table>
 			</div>
