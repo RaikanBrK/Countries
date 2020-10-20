@@ -1,0 +1,29 @@
+#header {
+	background: #3A1313;
+}
+
+.logo-text {
+	font-family: 'Lobster', cursive;
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	color: white;
+}
+
+#menu .nav-link {
+	color: #e4d4d4;
+	font-size: 1rem;
+}
+
+#menu .active .nav-link {
+	color: #fff5f5;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #477413;
+}
+
+#menu ul {
+	gap: 10px;
+}
+
+/*#menu .active .nav-link:before {
+
+}*/

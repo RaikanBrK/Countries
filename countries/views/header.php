@@ -1,5 +1,5 @@
 <header>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-md" id="header">
 
 		<a href="/index.php" class="navbar-brand logo-text">Willian</a>
 
@@ -12,10 +12,10 @@
 				<li class="nav-item active">
 					<a class="nav-link" href="/index.php">Search for Countries</a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="/countries.php">Countries</a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="/student.php">Student</a>
 				</li>
 			</ul>
