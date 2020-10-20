@@ -13,13 +13,13 @@ footer {
 	align-items: center;
 	list-style: none;	
 	gap: 10px;
-	margin: 0 0 0.2rem 0;
+	margin: 0 0 0.2em 0;
 	padding: 0;
 }
 
 .menu-footer .nav-link {
 	color: #6a5151;
-	font-size: 0.85rem;
+	font-size: 0.85em;
 }
 
 .menu-footer .nav-link:hover {
@@ -28,5 +28,5 @@ footer {
 
 .info-credits {
 	font-weight: 800;
-	font-size: 1.1rem;
+	font-size: 1.1em;
 }

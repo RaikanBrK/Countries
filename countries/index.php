@@ -15,9 +15,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 	<!-- Styles Css -->
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/media-query.css">
 
 	<link rel="stylesheet" href="css/search-countries.css">
 

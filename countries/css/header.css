@@ -4,7 +4,7 @@
 
 .logo-text {
 	font-family: 'Lobster', cursive;
-	font-size: 1.8rem;
+	font-size: 1.8em;
 	letter-spacing: 1px;
 	color: white;
 }
@@ -19,11 +19,11 @@
 
 #menu .nav-link {
 	color: #e4d4d4;
-	font-size: 1rem;
+	font-size: 1em;
 	position: relative;
 	padding-bottom: 4px;
 
-	font-size: 0.9rem;
+	font-size: 0.9em;
 
 	overflow-x: hidden;
 }
@@ -36,8 +36,7 @@
 	color: #fff5f5;
 }
 
-#menu .nav-link:hover:before,
-#menu .active .nav-link:before {
+#menu .nav-link:hover:before {
 	content: '';
 	display: block;
 	background: #1FBB54;
@@ -51,4 +50,14 @@
 
 #menu .active .nav-link:before {
 	background: #89ad15;
+}
+
+#hamburguer {
+	border: 1px solid #ffffff87;
+	border-radius: 4px;
+}
+
+#hamburguer:focus {
+	outline: none;
+	border: 1px solid #ffffffcc;
 }

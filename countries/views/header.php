@@ -8,7 +8,7 @@
 		<a href="/index.php" class="navbar-brand logo-text">Willian</a>
 
 		<button class="navbar-toggler" id="hamburguer" type="button" data-toggle="collapse" data-target="#menu" aria-label="Toggle navigation">
-			<i class="fas fa-bars"></i>
+			<i class="fas fa-bars text-white"></i>
 		</button>
 
 		<div class="collapse navbar-collapse" id="menu">
