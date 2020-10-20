@@ -7,3 +7,13 @@
 body {
 	font-size: 1em;
 }
+
+.content {
+	min-height: 75vh;
+}
+
+main {
+	display: none;
+	width: 80%;
+	margin: auto;
+}

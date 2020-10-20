@@ -1,3 +1,32 @@
-.content {
-	min-height: 75vh;
+.group-search {
+	width: 100%;
+	margin: 3em auto;
+	justify-content: center;
+}
+
+#search {
+	width: 80%;
+	background: #FAF4F4;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 50px 0 0 50px;
+}
+
+#search:focus {	
+	outline: none;
+}
+
+#send {
+	background: #301E9A;
+	color: white;
+	border-left: none;
+	border-radius: 0 50px 50px 0;
+
+	padding: 10px 20px;
+	text-transform: capitalize;
+}
+
+#search,
+#send {
+	border: 1px solid #a77e85;
 }
