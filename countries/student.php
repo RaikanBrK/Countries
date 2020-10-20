@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Search For Countries</title>
+	<title>Student</title>
 
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/90bfac5e12.js" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
-
+	
 	<link rel="stylesheet" href="css/search-countries.css">
 
 	<!-- Bootstrap JS -->
@@ -27,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </head>
 <body>
+	
 
 	<?php 
 		if (file_exists('views/header.php')) {

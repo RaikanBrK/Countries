@@ -1,0 +1,32 @@
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	border-top: 1.5px solid black;
+}
+
+.menu-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;	
+	gap: 10px;
+	margin: 0 0 0.2rem 0;
+	padding: 0;
+}
+
+.menu-footer .nav-link {
+	color: #6a5151;
+	font-size: 0.85rem;
+}
+
+.menu-footer .nav-link:hover {
+	color: black;
+}
+
+.info-credits {
+	font-weight: 800;
+	font-size: 1.1rem;
+}
