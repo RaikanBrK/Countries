@@ -15,6 +15,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 	<!-- Styles Css -->
+	<link rel="stylesheet" href="css/animation.css">
 	<link rel="stylesheet" href="css/header.css">
 
 	<!-- Bootstrap JS -->
