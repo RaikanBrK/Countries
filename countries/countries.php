@@ -45,7 +45,10 @@
 	?>
 
 	<section class="content">
-		<img src="images/countries.jpg" alt="asd" class="countries">
+		<div class="content-img">
+			<img src="images/countries.jpg" alt="asd" class="countries">
+			<h1 class="label-img">European countries</h1>
+		</div>
 		<main>
 
 			<div class="table-response-sm" id="table-countries">
