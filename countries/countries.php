@@ -47,7 +47,7 @@
 	<section class="content">
 		<div class="content-img">
 			<img src="images/countries.jpg" alt="asd" class="countries">
-			<h1 class="label-img">European countries</h1>
+			<!-- <h1 class="label-img">European countries</h1> -->
 		</div>
 		<main>
 
