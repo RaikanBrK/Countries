@@ -13,6 +13,7 @@
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
 
 	<!-- Styles Css -->
 	<link rel="stylesheet" href="css/style.css">
@@ -41,11 +42,30 @@
 		}
 	?>
 
-	<div class="content">
+	<section class="content">
 		<main>
-			asdasdasdasd
+			<div class="profile-student">
+				<div class="profile-header">
+					<img src="images/user.jpg" class="user-profile">
+					<h2 class="profile-title">Willian Marcal</h2>
+					<span class="profile-number">Student Number <br>2019306</span>
+				</div>
+
+				<div class="profile-itens">
+					<div class="profile-item">
+						<span class="item">Curso:</span>
+						<span class="result-item">Web Development</span>
+					</div>
+
+					<div class="profile-item">
+						<span class="item">CA:</span>
+						<span class="result-item">PHP Project</span>
+					</div>
+
+				</div>
+			</div>
 		</main>
-	</div>
+	</section>
 
 	<?php 
 		if (file_exists('views/footer.php')) {
