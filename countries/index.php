@@ -1,3 +1,9 @@
+<?php 
+
+	$controller = isset($_GET['search']) && $_GET['search'] != '';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,29 +51,52 @@
 			
 			<form action="?">
 				<div class="input-group group-search">
-					<input type="text" id="search" name="search" autocomplete="off" placeholder="Enter the country name ex: Italy">
+					<input type="text" id="search" name="search" autocomplete="off" placeholder="Enter the country name ex: Italy" value="<?= isset($_GET['search']) ? $_GET['search'] : '' ?>">
 					<div class="input-group-append">
 						<button class="btn btn-outline-secondary" id="send" type="submit">send</button>
 					</div>
 				</div>
 			</form>
 
-			<div class="table-response-sm">
-				<table class="table table-striped table-dark table-hover">
-					<thead>
-						<tr>
-							<th scope="col">Countries</th>
-							<th scope="col">Capital</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">Italy</th>
-							<td>Rome</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			<?php 
+			if ($controller) { 
+				require_once('bd/ControllerCountries.php');
+				$countries = new ControllerCountries();
+				$countries->__set('countrie', $_GET['search']);
+				$result = $countries->searchCountries();
+				if ($result) {
+			?>
+					<div class="table-response-sm">
+						<table class="table table-striped table-dark table-hover">
+							<thead>
+								<tr>
+									<th scope="col">Countries</th>
+									<th scope="col">Capital</th>
+								</tr>
+							</thead>
+							<tbody>
+								<?php if (isset($result[0]['controller']) && $result[0]['controller'] == false) { ?>
+									<h1 class="text-similar">Similar searches from <span id="text"><?= $_GET['search'] ?></span></h1>
+								<?php } ?>
+								
+
+								<?php foreach ($result as $key => $countrie) { ?>
+									<tr>
+										<th scope="row"><?= $countrie['countrie'] ?></th>
+										<td><?= $countrie['capital'] ?></td>
+									</tr>
+								<?php } ?>
+
+
+							</tbody>
+						</table>
+					</div>
+			<?php 
+				} else { ?>
+					<h3 class="not-found-countries">This country was not found</h3>
+			<?php }
+			}
+			?>
 
 
 

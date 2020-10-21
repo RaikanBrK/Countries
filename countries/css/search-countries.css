@@ -30,3 +30,17 @@
 #send {
 	border: 1px solid #a77e85;
 }
+
+.not-found-countries {
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.text-similar {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#text {
+	color: #240eec;
+}

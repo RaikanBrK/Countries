@@ -3,6 +3,8 @@
 	
 	class ControllerCountries {
 		protected $countries;
+		protected $countrie;
+		protected $capital;
 		
 		public function __construct() {
 			$this->init();
@@ -44,6 +46,29 @@
 				"Austria" => "Vienna",
 				"Poland" => "Warsaw"	
 			]);
+		}
+
+		public function searchCountries() {
+			$result = [];
+
+			// Checks for equality
+			if (array_key_exists(ucfirst($this->countrie), $this->countries)) {
+				$countrie = ucfirst($this->countrie);
+				array_push($result, ['controller' => true, 'countrie' => $countrie ,'capital' => $this->countries[$countrie]]);
+			} else {
+
+				// Similar Checks
+				$countrieDig = strtolower(trim($this->countrie));
+				$result = [];
+				foreach ($this->__get('countries') as $key => $value) {
+					$countrie = strtolower(trim($key));
+					if (mb_strpos($countrie, $countrieDig) !== false) {
+						array_push($result, ['controller' => false, 'countrie' => $key, 'capital' => $value]);
+					}
+				}
+			}
+
+			return count($result) > 0 ? $result : false;
 		}
 
 	}
