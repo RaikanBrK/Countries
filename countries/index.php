@@ -1,8 +1,4 @@
-<?php 
-
-	$controller = isset($_GET['search']) && $_GET['search'] != '';
-
-?>
+<?php $controller = isset($_GET['search']) && $_GET['search'] != ''; ?>
 
 <!DOCTYPE html>
 <html lang="en">
