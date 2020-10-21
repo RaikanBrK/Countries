@@ -45,8 +45,8 @@
 	?>
 
 	<section class="content">
+		<img src="images/countries.jpg" alt="asd" class="countries">
 		<main>
-			<img src="images/countries.jpg" alt="asd" class="countries">
 
 			<div class="table-response-sm" id="table-countries">
 				<table class="table table-striped table-dark table-hover">
