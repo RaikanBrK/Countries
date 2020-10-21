@@ -7,7 +7,6 @@
 #search {
 	width: 80%;
 	background: #FAF4F4;
-	padding: 10px 20px;
 	border: none;
 	border-radius: 50px 0 0 50px;
 }
@@ -22,13 +21,14 @@
 	border-left: none;
 	border-radius: 0 50px 50px 0;
 
-	padding: 10px 20px;
+	
 	text-transform: capitalize;
 }
 
 #search,
 #send {
 	border: 1px solid #a77e85;
+	padding: 10px 20px;
 }
 
 .not-found-countries {
@@ -39,6 +39,7 @@
 .text-similar {
 	font-size: 1.2em;
 	text-align: center;
+	color: #58273c;
 }
 
 #text {

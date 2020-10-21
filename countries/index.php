@@ -66,7 +66,7 @@
 				$result = $countries->searchCountries();
 				if ($result) {
 			?>
-					<div class="table-response-sm">
+					<div class="table-response-sm mb-5">
 						<table class="table table-striped table-dark table-hover">
 							<thead>
 								<tr>
