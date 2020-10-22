@@ -1,15 +1,15 @@
 <?php
 	$menu = [
 		[
-			"diretorio" => "/index",
+			"diretorio" => "index",
 			"text" => "Search for Countries"
 		],
 		[
-			"diretorio" => "/countries",
+			"diretorio" => "countries",
 			"text" => "Countries"
 		],
 		[
-			"diretorio" => "/student",
+			"diretorio" => "student",
 			"text" => "Student"
 		]
 	];

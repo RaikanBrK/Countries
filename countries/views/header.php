@@ -5,7 +5,7 @@
 <header class="content">
 	<nav class="navbar navbar-expand-md" id="header">
 
-		<a href="/index.php" class="navbar-brand logo-text">Willian</a>
+		<a href="index.php" class="navbar-brand logo-text">Willian</a>
 
 		<button class="navbar-toggler" id="hamburguer" type="button" data-toggle="collapse" data-target="#menu" aria-label="Toggle navigation">
 			<i class="fas fa-bars text-white"></i>

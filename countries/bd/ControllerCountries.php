@@ -1,6 +1,5 @@
 <?php 
 
-	
 	class ControllerCountries {
 		protected $countries;
 		protected $countrie;
