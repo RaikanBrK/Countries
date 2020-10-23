@@ -46,7 +46,7 @@
 
 	<section class="content">
 		<div class="content-img">
-			<img src="images/countries.jpg" alt="asd" class="countries">
+			<h3 class="text-img">European countries</h3>
 		</div>
 		<main>
 
