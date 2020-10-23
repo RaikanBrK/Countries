@@ -3,7 +3,7 @@
 ?>
 
 <footer class="content">
-	<ul class="menu-footer">
+	<!-- <ul class="menu-footer">
 		<?php foreach ($menu as $link) { 
 			$diretorio = $link['diretorio'].'.php';
 		?>
@@ -11,7 +11,9 @@
 				<a class="nav-link" href="<?= $diretorio ?>"><?= $link['text'] ?></a>
 			</li>
 		<?php } ?>
-	</ul>
+	</ul> -->
+
+	<h2 class="text-footer-itens">Stdudent, Countries and Search for Countries</h2>
 	<h2 class="info-credits">
 		2020 - Web Development - Willian Marcal
 	</h2>

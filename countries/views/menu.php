@@ -2,20 +2,20 @@
 	$menu = [
 		[
 			"diretorio" => "index",
-			"text" => "Search for Countries"
+			"text" => "Student"
 		],
 		[
 			"diretorio" => "countries",
 			"text" => "Countries"
 		],
 		[
-			"diretorio" => "student",
-			"text" => "Student"
-		]
+			"diretorio" => "search-for-countries",
+			"text" => "Search for Countries"
+		]	
 	];
 
 	function activeLink($path) {
-		$url = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+		$url = str_replace('/', '', trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)));
 		$path = trim($path);
 		return $path == $url ? 'active' : '';
 	}
